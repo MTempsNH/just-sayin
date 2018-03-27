@@ -2,16 +2,14 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 
-import Hero from './components/Hero';
+import SignUpHero from './containers/SignUpHero';
 
 class App extends Component {
   render() {
     return (
     <div className="wrapper">
         <header className="header">Header</header>
-        <article className="main">
-            <Hero />
-        </article>
+        <SignUpHero />
         <footer className="footer">Footer</footer>
     </div>
     );

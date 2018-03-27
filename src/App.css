@@ -1,26 +1,33 @@
 .wrapper {
   display: flex;
-  flex-flow: row wrap;
+  flex-direction: column;
   font-weight: bold;
   text-align: center;
+  height: 100vh;
 }
 
 .wrapper > * {
   padding: 10px;
-  flex: 1 100%;
 }
 
 .header {
-  background: #4A7DB6;
+  height: 18px;
+  background: #FFF4C6;
 }
 
 .footer {
-  background: #A3D4EA;
+  height: 18px;
+  background: #7B7A69;
 }
 
 .main {
+  flex: 1;
   text-align: left;
-  background: #FFFFFF;
+  background: #70b2e4; /* Old browsers */
+  background: -moz-linear-gradient(top, #70b2e4 37%, #4a7db6 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #70b2e4 37%,#4a7db6 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #70b2e4 37%,#4a7db6 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#70b2e4', endColorstr='#4a7db6',GradientType=0 ); /* IE6-9 */
 }
 
 .aside-1 {
@@ -44,5 +51,5 @@
 }
 
 body {
-  padding: 2em;
+
 }

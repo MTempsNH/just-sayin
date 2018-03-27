@@ -1,9 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Hero from './Hero';
+import SignUp from './SignUp';
 
 it('renders without crashing', () => {
     const div = document.createElement('div');
-    ReactDOM.render(<Hero />, div);
+
+    ReactDOM.render(<SignUp onSignUp={() => {}}/>, div);
     ReactDOM.unmountComponentAtNode(div);
 });
